@@ -78,7 +78,7 @@ export default function SignupPage() {
                   {loading ? "Loading..." : "Signup"}
                 </button>
                 <p className="mb-0 mt-2 pt-1 text-sm font-semibold text-center">
-                  Don't have an account ?
+                  Don&apos;t have an account ?
                   <Link
                     href="/login"
                     className="ml-2 transition duration-150 ease-in-out text-blue-600 hover:text-blue-700 "

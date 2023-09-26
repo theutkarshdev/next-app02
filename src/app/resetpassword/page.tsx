@@ -114,7 +114,7 @@ export default function ResetPage() {
                   </div>
 
                   <h3 className="text-xl leading-6 font-bold text-gray-900 mt-4 mb-1">
-                    Whoops, that's an expired link
+                    Whoops, that&apos;s an expired link
                   </h3>
                   <div className="px-7 pb-3">
                     <p className="text-sm text-gray-500">
