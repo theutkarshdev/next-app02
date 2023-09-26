@@ -22,13 +22,13 @@ export default function VerifyEmailPage() {
   useEffect(() => {
     const urlToken = window.location.search.split("=")[1];
     setToken(urlToken || "");
-  });
+  }, []);
 
   useEffect(() => {
     if (token.length > 0) {
       verifyUserEmail();
     }
-  }, [token]);
+  }, [token, verifyUserEmail]);
 
   return (
     <div className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">

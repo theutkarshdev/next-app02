@@ -47,9 +47,9 @@ export default function ResetPage() {
 
   useEffect(() => {
     const urlToken = window.location.search.split("=")[1];
-    setUser({ ...user, token: urlToken });
-  });
-
+    setUser((prevUser) => ({ ...prevUser, token: urlToken }));
+  }, [user]); // Add user to the dependency array
+  
   return (
     <section className="h-screen">
       <Toaster />
