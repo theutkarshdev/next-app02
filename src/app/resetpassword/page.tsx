@@ -48,7 +48,7 @@ export default function ResetPage() {
   useEffect(() => {
     const urlToken = window.location.search.split("=")[1];
     setUser({ ...user, token: urlToken });
-  }, []);
+  });
 
   return (
     <section className="h-screen">
